@@ -1,0 +1,76 @@
+@import "tailwindcss";
+
+@theme {
+  --color-woodsmoke-50: #f5f6f6;
+  --color-woodsmoke-100: #e5e6e8;
+  --color-woodsmoke-200: #cfd1d2;
+  --color-woodsmoke-300: #adb2b3;
+  --color-woodsmoke-400: #83898d;
+  --color-woodsmoke-500: #686e72;
+  --color-woodsmoke-600: #595d61;
+  --color-woodsmoke-700: #4c5052;
+  --color-woodsmoke-800: #434547;
+  --color-woodsmoke-900: #3b3c3e;
+  --color-woodsmoke-950: #1b1c1d;
+  
+  /* Alias como primary */
+  --color-primary-50: #f2fbf9;
+  --color-primary-100: #d3f4ee;
+  --color-primary-200: #a6e9de;
+  --color-primary-300: #72d6c9;
+  --color-primary-400: #44bdb1;
+  --color-primary-500: #2ba197;
+  --color-primary-600: #20817b;
+  --color-primary-700: #1d6864;
+  --color-primary-800: #1c5351;
+  --color-primary-900: #1b4644;
+  --color-primary-950: #0a2929;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  overscroll-behavior-y: none;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+/* Animaciones CSS como fallback */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeInUpDelay {
+  0%, 30% {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fade-in {
+  animation: fadeInUp 1.2s ease-out forwards;
+}
+
+.animate-fade-in-delay {
+  animation: fadeInUpDelay 2s ease-out forwards;
+}
+

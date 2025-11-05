@@ -1,0 +1,5 @@
+#root {
+  width: 100%;
+  min-height: 100vh;
+  /* No establecer height: 100vh que podría limitar el scroll */
+}
