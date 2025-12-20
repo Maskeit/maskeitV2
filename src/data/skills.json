@@ -1,0 +1,166 @@
+{
+    "skills": {
+        "technical": {
+            "frontend": [
+                {
+                    "name": "React.js",
+                    "logo": "react"
+                },
+                {
+                    "name": "Vue.js",
+                    "logo": "vue"
+                },
+                {
+                    "name": "TypeScript",
+                    "logo": "typescript"
+                },
+                {
+                    "name": "Tailwind CSS",
+                    "logo": "tailwind"
+                }
+            ],
+            "backend": [
+                {
+                    "name": "Python",
+                    "logo": "python"
+                },
+                {
+                    "name": "Flask",
+                    "logo": "flask"
+                },
+                {
+                    "name": "FastAPI",
+                    "logo": "fastapi"
+                },
+                {
+                    "name": "PHP",
+                    "logo": "php"
+                },
+                {
+                    "name": "Node.js",
+                    "logo": "nodejs"
+                }
+            ],
+            "databases": [
+                {
+                    "name": "PostgreSQL",
+                    "logo": "postgresql"
+                },
+                {
+                    "name": "MySQL",
+                    "logo": "mysql"
+                },
+                {
+                    "name": "Redis",
+                    "logo": "redis"
+                },
+                {
+                    "name": "Pinecone",
+                    "logo": "pinecone"
+                }
+            ],
+            "devops": [
+                {
+                    "name": "Docker",
+                    "logo": "docker"
+                },
+                {
+                    "name": "CI/CD",
+                    "logo": "cicd"
+                },
+                {
+                    "name": "Git",
+                    "logo": "git"
+                },
+                {
+                    "name": "AWS (EC2)",
+                    "logo": "aws"
+                }
+            ],
+            "methodologies": [
+                {
+                    "name": "Agile",
+                    "logo": "agile"
+                },
+                {
+                    "name": "Scrum",
+                    "logo": "scrum"
+                }
+            ],
+            "frameworks": [
+                {
+                    "name": "Laravel",
+                    "logo": "laravel"
+                },
+                {
+                    "name": "Next.js",
+                    "logo": "nextjs"
+                }
+            ],
+            "automation": [
+                {
+                    "name": "n8n",
+                    "logo": "n8n"
+                }
+            ]
+        },
+        "aiml": {
+            "core": [
+                {
+                    "name": "Python (Advanced)",
+                    "logo": "python"
+                },
+                {
+                    "name": "TensorFlow",
+                    "logo": "tensorflow"
+                },
+                {
+                    "name": "PyTorch",
+                    "logo": "pytorch"
+                }
+            ],
+            "dataScience": [
+                {
+                    "name": "NumPy",
+                    "logo": "numpy"
+                },
+                {
+                    "name": "Pandas",
+                    "logo": "pandas"
+                },
+                {
+                    "name": "Scikit-learn",
+                    "logo": "scikitlearn"
+                },
+                {
+                    "name": "OpenCV",
+                    "logo": "opencv"
+                }
+            ],
+            "computerVision": [
+                {
+                    "name": "YOLOv10",
+                    "logo": "yolo"
+                },
+                {
+                    "name": "Computer Vision",
+                    "logo": "computervision"
+                },
+                {
+                    "name": "Edge AI (Raspberry Pi)",
+                    "logo": "raspberrypi"
+                }
+            ],
+            "nlp": [
+                {
+                    "name": "NLP basics",
+                    "logo": "nlp"
+                },
+                {
+                    "name": "Data Labeling",
+                    "logo": "labeling"
+                }
+            ]
+        }
+    }
+}

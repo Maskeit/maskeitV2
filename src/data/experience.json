@@ -1,0 +1,20 @@
+[
+    {
+        "job":"Full-Stack Engineer in Jatenx",
+        "company":"Jatenx",
+        "description":"Built and launched two key WordPress sites to showcase company services. Deployed and configured production-grade server applications. Led full-stack development of an AI chat app with FastAPI and Next.js. Developed CLI and Microservices tools for embedding generation and RedisVL integration. Integrated LLMs for knowledge-driven conversational AI. Improved data extraction workflows using big data principles.",
+        "url":"https://www.jatenx.com"
+    },
+    {
+        "job":"Full-Stack Developer",
+        "company":"Proplayas",
+        "description": "Redesigned the Proplayas.org website with Next.js and TypeScript, improving user experience and reducing loading times by 40%. Delivered a scalable architecture supporting high traffic seamlessly.",
+        "url":"http://proplayas.org"
+    },
+    {
+        "job":"Full-Stack Developer",
+        "company":"CISnatura",
+        "description":"Developed a modular e-commerce platform with scalable RESTful APIs and JWT-based authentication, which increased transaction efficiency by 25%. Optimized performance with an MVC/OOP architecture. Frontend in Next.js.",
+        "url":"http://cisnaturatienda.com"
+    }
+]

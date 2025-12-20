@@ -14,7 +14,7 @@ export const Personal = () => {
 
                 {/* Grid principal */}
                 <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
-                    
+
                     {/* Columna izquierda: Foto principal y bio personal */}
                     <div className="lg:col-span-1 space-y-6">
                         {/* Foto principal */}
@@ -32,9 +32,9 @@ export const Personal = () => {
                         <div className="bg-white/60 backdrop-blur-sm border border-woodsmoke-200/50 rounded-2xl p-6">
                             <h4 className="text-woodsmoke-900 font-semibold mb-3">A little about my life</h4>
                             <p className="text-lg text-woodsmoke-700 leading-relaxed">
-                                When I'm not coding, you'll find me exploring new technologies, playing bass guitar, 
-                                or enjoying a good coffee while working on personal projects that I'm passionate about. 
-                                I believe that creativity flows from diverse experiences, so I try to balance my technical 
+                                When I'm not coding, you'll find me exploring new technologies, playing bass guitar,
+                                or enjoying a good coffee while working on personal projects that I'm passionate about.
+                                I believe that creativity flows from diverse experiences, so I try to balance my technical
                                 work with music, travel, and connecting with nature whenever possible.
                             </p>
                         </div>
@@ -43,43 +43,54 @@ export const Personal = () => {
                     {/* Columna central y derecha: Grid de hobbies y trayectoria */}
                     <div className="lg:col-span-2">
                         <div className="grid grid-cols-2 md:grid-cols-3 grid-rows-4 gap-4 h-[700px]">
-                            
+
                             {/* Hobby 1: Tecnología - Grande */}
-                            <div className="col-span-2 md:col-span-1 row-span-2 bg-white/60 rounded-2xl p-6 relative overflow-hidden border border-woodsmoke-200/50">
-                                <div className="relative z-10">
-                                    <div className="text-4xl mb-3">💻</div>
-                                    <h4 className="text-woodsmoke-900 font-bold text-lg mb-2">Tech Enthusiast</h4>
-                                    <p className="text-woodsmoke-600 text-sm">
-                                        Always learning new technologies and frameworks. I love experimenting with 
-                                        cutting-edge tools and contributing to open-source projects in my free time.
-                                    </p>
+
+                            <div className="col-span-1 row-span-2 bg-white/60 rounded-2xl relative border border-woodsmoke-200/50 overflow-hidden">
+                                
+                                <div className="absolute inset-0 z-0 rounded-2xl overflow-hidden">
+                                    <img
+                                        src="/src/assets/photos/tech.jpeg"
+                                        alt="bassist"
+                                        className="w-full h-full object-contain object-cover"
+                                    />
                                 </div>
-                                <div className="absolute inset-0 bg-black/10 rounded-2xl flex items-center justify-center opacity-50">
-                                    <span className="text-woodsmoke-600 text-xs">Workspace setup image</span>
+                                <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-woodsmoke-900/80 to-transparent p-2 rounded-md">
+                                    <h3 className="text-white font-bold text-xl">Tech Enthusiast</h3>
+                                    <p className="text-white/90 text-sm">I love experimenting with
+                                        cutting-edge tools and contributing to open-source projects in my free time</p>
                                 </div>
                             </div>
-
+                            
                             {/* Música */}
-                            <div className="col-span-1 row-span-1 bg-white/60 rounded-2xl p-4 relative border border-woodsmoke-200/50">
-                                <div className="text-center relative z-10">
-                                    <div className="text-3xl mb-2">🎵</div>
-                                    <div className="text-woodsmoke-900 text-sm font-medium">Music</div>
-                                    <div className="text-woodsmoke-600 text-xs">Bass Guitar & Lo-fi</div>
+                            <div className="col-span-1 row-span-2 bg-white/60 rounded-2xl relative border border-woodsmoke-200/50 overflow-hidden">
+                                
+                                <div className="absolute inset-0 z-0 rounded-2xl overflow-hidden">
+                                    <img
+                                        src="/src/assets/photos/me-3.jpeg"
+                                        alt="bassist"
+                                        className="w-full h-full object-contain object-cover"
+                                    />
                                 </div>
-                                <div className="absolute inset-0 bg-black/10 rounded-2xl flex items-center justify-center opacity-50">
-                                    <span className="text-woodsmoke-600 text-xs">Bass photo</span>
+                                <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-woodsmoke-900/100 to-transparent p-2 rounded-md">
+                                    <h3 className="text-white font-bold text-xl">Music as expression</h3>
+                                    <p className="text-white text-sm">One of my hobbies is music; listening and playing inspires you to create new ideas.</p>
                                 </div>
                             </div>
 
                             {/* Gaming */}
-                            <div className="col-span-1 row-span-1 bg-white/60 rounded-2xl p-4 relative border border-woodsmoke-200/50">
-                                <div className="text-center relative z-10">
-                                    <div className="text-3xl mb-2">🎮</div>
-                                    <div className="text-woodsmoke-900 text-sm font-medium">Gaming</div>
-                                    <div className="text-woodsmoke-600 text-xs">Strategy & Indie</div>
+                            <div className="col-span-1 row-span-2 bg-white/60 rounded-2xl relative border border-woodsmoke-200/50 overflow-hidden">
+                                
+                                <div className="absolute inset-0 z-0 rounded-2xl overflow-hidden">
+                                    <img
+                                        src="/src/assets/photos/talk.jpeg"
+                                        alt="bassist"
+                                        className="w-full h-full object-contain object-cover"
+                                    />
                                 </div>
-                                <div className="absolute inset-0 bg-black/10 rounded-2xl flex items-center justify-center opacity-50">
-                                    <span className="text-woodsmoke-600 text-xs">Gaming setup</span>
+                                <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-woodsmoke-900/80 to-transparent p-2 rounded-md">
+                                    <h3 className="text-white font-bold text-xl">Sharing Knowledge</h3>
+                                    <p className="text-white/90 text-sm">As a software engineer, I enjoy mentoring and collaborating with peers.</p>
                                 </div>
                             </div>
 
@@ -127,7 +138,7 @@ export const Personal = () => {
 
                 {/* Sección inferior: Valores personales */}
                 <div className="mt-12 grid grid-cols-1 md:grid-cols-3 gap-6">
-                    
+
                     <div className="bg-white/60 border border-woodsmoke-200/50 rounded-xl p-6 text-center">
                         <div className="text-3xl mb-3">💡</div>
                         <h4 className="text-woodsmoke-900 font-semibold mb-2">Curiosity</h4>
