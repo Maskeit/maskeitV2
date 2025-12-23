@@ -1,5 +1,4 @@
 import { useEffect, useRef, useState } from 'react'
-//import logo from '@/assets/logos/logo2.svg'
 import logo from '@/assets/logos/2.png'
 
 interface HeaderProps {
@@ -11,6 +10,7 @@ const Header = ({ className = '' }: HeaderProps) => {
   const [isVisible, setIsVisible] = useState(true)
   const [lastScrollY, setLastScrollY] = useState(0)
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false)
+
 
   useEffect(() => {
     const handleScroll = () => {
@@ -100,15 +100,6 @@ const Header = ({ className = '' }: HeaderProps) => {
               </a>
             ))}
 
-            {/* Language Selector (opcional, como en el ejemplo) */}
-            <div className="ml-4 flex items-center">
-              <button className="flex items-center px-3 py-2 text-sm font-medium text-woodsmoke-700 hover:text-woodsmoke-900 rounded-lg hover:bg-woodsmoke-100 transition-all duration-200">
-                <span>Language</span>
-                <svg className="ml-1 h-4 w-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
-                </svg>
-              </button>
-            </div>
           </nav>
 
           {/* Mobile menu button */}
@@ -187,19 +178,6 @@ const Header = ({ className = '' }: HeaderProps) => {
               </a>
             ))}
 
-            {/* Language selector mobile */}
-            <div className="pt-2 border-t border-woodsmoke-200">
-              <button className="
-                w-full flex items-center justify-between px-3 py-2 rounded-lg
-                text-base font-medium text-woodsmoke-700 hover:text-woodsmoke-900
-                hover:bg-woodsmoke-100 transition-all duration-200
-              ">
-                <span>Language</span>
-                <svg className="h-4 w-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
-                </svg>
-              </button>
-            </div>
           </nav>
         </div>
       </div>

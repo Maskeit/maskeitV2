@@ -1,12 +1,12 @@
-import Github from '@/assets/icons/comp/Github';
-import LinkedIn from '@/assets/icons/comp/Linkedin';
-import Gmail from '@/assets/icons/comp/Gmail';
+import GmailSvg from '@/assets/skills/Gmail.svg';
+import GithubSvg from '@/assets/skills/Github.svg';
+import LinkedinSvg from '@/assets/skills/Linkedin.svg';
 
 export const Contact = () => {
     const socialLogos = [
-        { label: 'GitHub', url: 'https://github.com/Maskeit' },
-        { label: 'LinkedIn', url: 'www.linkedin.com/in/miguel1170' },
-        { label: 'Email', url: 'mailto:miguelalejandre182@gmail.com' },
+        { label: 'GitHub', url: 'https://github.com/Maskeit', icon: GithubSvg },
+        { label: 'LinkedIn', url: 'www.linkedin.com/in/miguel1170', icon: LinkedinSvg },
+        { label: 'Email', url: 'mailto:miguelalejandre182@gmail.com', icon: GmailSvg },
     ];
 
     return (
@@ -22,9 +22,7 @@ export const Contact = () => {
                         rel="noopener noreferrer"
                         className="flex items-center justify-center space-x-2 px-6 py-3 w-full md:w-40 bg-woodsmoke-100 hover:bg-woodsmoke-200 rounded-lg transition-colors duration-200"
                     >
-                        {social.label === 'GitHub' && <Github className="w-8 h-8 text-woodsmoke-900" />}
-                        {social.label === 'LinkedIn' && <LinkedIn className="w-8 h-8 text-woodsmoke-900" />}
-                        {social.label === 'Email' && <Gmail className="w-8 h-8 text-woodsmoke-900" />}
+                        <img src={social.icon} alt={social.label} className="w-8 h-8" />
                         <span className="text-woodsmoke-900 font-medium">{social.label}</span>
                     </a>
                 ))}

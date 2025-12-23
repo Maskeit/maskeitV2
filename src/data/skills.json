@@ -4,103 +4,95 @@
             "frontend": [
                 {
                     "name": "React.js",
-                    "logo": "react"
+                    "logo": "React"
                 },
                 {
                     "name": "Vue.js",
-                    "logo": "vue"
+                    "logo": "Vue"
                 },
                 {
                     "name": "TypeScript",
-                    "logo": "typescript"
+                    "logo": "TypeScript"
                 },
                 {
                     "name": "Tailwind CSS",
-                    "logo": "tailwind"
+                    "logo": "Tailwind"
                 }
             ],
             "backend": [
                 {
                     "name": "Python",
-                    "logo": "python"
+                    "logo": "Python"
                 },
                 {
                     "name": "Flask",
-                    "logo": "flask"
+                    "logo": "Flask"
                 },
                 {
                     "name": "FastAPI",
-                    "logo": "fastapi"
+                    "logo": "FastAPI"
                 },
                 {
                     "name": "PHP",
-                    "logo": "php"
+                    "logo": "PHP"
                 },
                 {
                     "name": "Node.js",
-                    "logo": "nodejs"
+                    "logo": "NodeJS"
                 }
             ],
             "databases": [
                 {
                     "name": "PostgreSQL",
-                    "logo": "postgresql"
+                    "logo": "PostgreSQL"
                 },
                 {
                     "name": "MySQL",
-                    "logo": "mysql"
+                    "logo": "MySQL"
                 },
                 {
                     "name": "Redis",
-                    "logo": "redis"
-                },
-                {
-                    "name": "Pinecone",
-                    "logo": "pinecone"
+                    "logo": "Redis"
                 }
             ],
             "devops": [
                 {
                     "name": "Docker",
-                    "logo": "docker"
-                },
-                {
-                    "name": "CI/CD",
-                    "logo": "cicd"
+                    "logo": "Docker"
                 },
                 {
                     "name": "Git",
-                    "logo": "git"
+                    "logo": "Git"
                 },
                 {
                     "name": "AWS (EC2)",
-                    "logo": "aws"
+                    "logo": "AWS"
+                },
+                {
+                    "name": "Firebase",
+                    "logo": "Firebase"
                 }
             ],
             "methodologies": [
                 {
-                    "name": "Agile",
-                    "logo": "agile"
-                },
-                {
                     "name": "Scrum",
-                    "logo": "scrum"
+                    "logo": "Scrum"
                 }
             ],
             "frameworks": [
                 {
                     "name": "Laravel",
-                    "logo": "laravel"
+                    "logo": "Laravel"
                 },
                 {
                     "name": "Next.js",
-                    "logo": "nextjs"
+                    "logo": "NextJS"
                 }
             ],
             "automation": [
                 {
                     "name": "n8n",
-                    "logo": "n8n"
+                    "logo": "N8N"
                 }
             ]
         },
