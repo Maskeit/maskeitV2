@@ -1,6 +1,6 @@
-import GmailSvg from '@/assets/skills/Gmail.svg';
-import GithubSvg from '@/assets/skills/Github.svg';
-import LinkedinSvg from '@/assets/skills/Linkedin.svg';
+import GmailSvg from '../../../public/skills/Gmail.svg';
+import GithubSvg from '../../../public/skills/Github.svg';
+import LinkedinSvg from '../../../public/skills/Linkedin.svg';
 
 export const Contact = () => {
     const socialLogos = [

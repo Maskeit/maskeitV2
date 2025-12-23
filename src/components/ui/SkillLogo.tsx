@@ -7,7 +7,7 @@ export const SkillLogo = ({ logoName, className = '' }: SkillLogoProps) => {
     // Ruta directa al SVG en public/skills/
     return (
         <img
-            src={`/src/assets/skills/${logoName}.svg`}
+            src={`/skills/${logoName}.svg`}
             alt={logoName}
             className={className}
             width="56"
