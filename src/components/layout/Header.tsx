@@ -39,7 +39,7 @@ const Header = ({ className = '' }: HeaderProps) => {
     { label: 'Inicio', href: '#hero' },
     { label: 'Professional Journey', href: '#professional' },
     { label: 'About me', href: '#about' },
-    { label: 'Skills', href: '#skills' },
+    { label: 'Experience', href: '#skills' },
     { label: 'Contacto', href: '#contact' },
   ]
 

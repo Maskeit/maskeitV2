@@ -54,7 +54,7 @@ export const Skills = () => {
 
     return (
         <>
-            <section className="min-h-screen px-4 py-16">
+            <section className="min-h-screen px-4 py-16" id='skills'>
                 {/* Experience Section */}
                 <div className="max-w-6xl mx-auto">
                     <h1 className="text-5xl md:text-7xl font-bold bg-gradient-to-r from-woodsmoke-900 via-woodsmoke-800 to-woodsmoke-700 bg-clip-text text-transparent animate-fade-in tracking-wide mb-16 text-center">

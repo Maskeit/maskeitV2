@@ -20,7 +20,7 @@ export const Personal = () => {
                         {/* Foto principal */}
                         <div className="aspect-[4/5] bg-white/60 border border-woodsmoke-200/50 rounded-2xl overflow-hidden relative group">
                             <div className="absolute inset-0 flex items-center justify-center">
-                                <img src="/src/assets/photos/me-2.jpeg" alt="Miguel" className="w-full h-full object-cover" />
+                                <img src="/photos/me-2.jpeg" alt="Miguel" className="w-full h-full object-cover" />
                             </div>
                             <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-woodsmoke-900/80 to-transparent p-6">
                                 <h3 className="text-white font-bold text-xl">Miguel</h3>
@@ -50,7 +50,7 @@ export const Personal = () => {
                                 
                                 <div className="absolute inset-0 z-0 rounded-2xl overflow-hidden">
                                     <img
-                                        src="/src/assets/photos/tech.jpeg"
+                                        src="/photos/tech.jpeg"
                                         alt="bassist"
                                         className="w-full h-full object-contain object-cover"
                                     />
@@ -67,7 +67,7 @@ export const Personal = () => {
                                 
                                 <div className="absolute inset-0 z-0 rounded-2xl overflow-hidden">
                                     <img
-                                        src="/src/assets/photos/me-3.jpeg"
+                                        src="/photos/me-3.jpeg"
                                         alt="bassist"
                                         className="w-full h-full object-contain object-cover"
                                     />
@@ -83,7 +83,7 @@ export const Personal = () => {
                                 
                                 <div className="absolute inset-0 z-0 rounded-2xl overflow-hidden">
                                     <img
-                                        src="/src/assets/photos/talk.jpeg"
+                                        src="/photos/talk.jpeg"
                                         alt="bassist"
                                         className="w-full h-full object-contain object-cover"
                                     />
