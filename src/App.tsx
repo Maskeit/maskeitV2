@@ -1,7 +1,7 @@
 import './App.css'
 import { Header } from '@/components/layout'
 import { Hero } from '@/components/sections/Hero'
-import { About } from '@/components/sections/Profesional'
+import { About } from '@/components/sections/Services'
 import { Personal } from '@/components/sections/Personal'
 import { Contact } from '@/components/sections/Contact'
 import { Skills } from '@/components/sections/Skills'
@@ -18,8 +18,8 @@ function App() {
         {/* Hero Section */}
         <Hero />
         <About />
-        <Personal />
         <Skills />
+        <Personal />
         <Contact /> 
       </main>
     </div>

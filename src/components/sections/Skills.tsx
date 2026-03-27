@@ -3,6 +3,8 @@ import experienceData from '@/data/experience.json'
 import skillsData from '@/data/skills.json'
 import { SkillLogo } from '@/components/ui/SkillLogo'
 
+const experiencePhotos = ['me-jatenx.jpeg', 'tech.jpeg', 'cisnatura.png']
+
 export const Skills = () => {
     const experiences = useMemo(() => experienceData, [])
     const skills = useMemo(() => skillsData.skills, [])
@@ -58,7 +60,7 @@ export const Skills = () => {
                 {/* Experience Section */}
                 <div className="max-w-6xl mx-auto">
                     <h1 className="text-5xl md:text-7xl font-bold bg-gradient-to-r from-woodsmoke-900 via-woodsmoke-800 to-woodsmoke-700 bg-clip-text text-transparent animate-fade-in tracking-wide mb-16 text-center">
-                        Experience
+                        Experiencia
                     </h1>
 
                     <div className="space-y-16">
@@ -94,27 +96,16 @@ export const Skills = () => {
                                     </div>
                                 </div>
 
-                                {/* Image Placeholder Column */}
+                                {/* Image Column */}
                                 <div
-                                    className={`h-80 md:h-96 rounded-lg bg-gradient-to-br from-slate-200 to-slate-300 flex items-center justify-center ${index % 2 === 1 ? 'md:col-start-1 md:row-start-1' : ''
+                                    className={`h-80 md:h-96 rounded-lg overflow-hidden ${index % 2 === 1 ? 'md:col-start-1 md:row-start-1' : ''
                                         }`}
                                 >
-                                    <div className="text-center text-slate-500">
-                                        <svg
-                                            className="w-16 h-16 mx-auto mb-4 opacity-40"
-                                            fill="none"
-                                            stroke="currentColor"
-                                            viewBox="0 0 24 24"
-                                        >
-                                            <path
-                                                strokeLinecap="round"
-                                                strokeLinejoin="round"
-                                                strokeWidth={1.5}
-                                                d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z"
-                                            />
-                                        </svg>
-                                        <p className="text-sm font-medium">Image Placeholder</p>
-                                    </div>
+                                    <img
+                                        src={`/photos/${experiencePhotos[index % experiencePhotos.length]}`}
+                                        alt={experience.company}
+                                        className="w-full h-full object-cover rounded-lg"
+                                    />
                                 </div>
                             </div>
                         ))}
@@ -126,7 +117,7 @@ export const Skills = () => {
             <section className="px-4 py-20 bg-gradient-to-b from-slate-50 to-slate-100">
                 <div className="max-w-7xl mx-auto">
                     <h2 className="text-5xl md:text-7xl font-bold bg-gradient-to-r from-woodsmoke-900 via-woodsmoke-800 to-woodsmoke-700 bg-clip-text text-transparent animate-fade-in tracking-wide mb-16 text-center">
-                        Skills & Technologies
+                        Tecnologías y Habilidades
                     </h2>
 
                     <div className="space-y-8">

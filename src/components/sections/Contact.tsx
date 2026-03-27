@@ -11,8 +11,8 @@ export const Contact = () => {
 
     return (
         <section className="min-h-screen justify-center items-center flex flex-col px-4 pt-16" id='contact'>
-            <h1 className="text-5xl md:text-7xl font-bold bg-gradient-to-r from-woodsmoke-900 via-woodsmoke-800 to-woodsmoke-700 bg-clip-text text-transparent animate-fade-in tracking-wide mb-6">Contact me</h1>
-            <p className="text-lg md:text-xl text-woodsmoke-700 animate-fade-in-delay max-w-3xl mx-auto">Let's work together!</p>
+            <h1 className="text-5xl md:text-7xl font-bold bg-gradient-to-r from-woodsmoke-900 via-woodsmoke-800 to-woodsmoke-700 bg-clip-text text-transparent animate-fade-in tracking-wide mb-6">Contacto</h1>
+            <p className="text-lg md:text-xl text-woodsmoke-700 animate-fade-in-delay max-w-3xl mx-auto">¡Trabajemos juntos!</p>
             <div className="flex flex-col md:flex-row mt-8 gap-4 md:gap-6 justify-center">
                 {socialLogos.map((social) => (
                     <a

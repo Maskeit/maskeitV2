@@ -37,9 +37,9 @@ const Header = ({ className = '' }: HeaderProps) => {
 
   const navItems = [
     { label: 'Inicio', href: '#hero' },
-    { label: 'Professional Journey', href: '#professional' },
-    { label: 'About me', href: '#about' },
-    { label: 'Experience', href: '#skills' },
+    { label: 'Servicios', href: '#services' },
+    { label: 'Experiencia', href: '#skills' },
+    { label: 'Sobre mí', href: '#about' },
     { label: 'Contacto', href: '#contact' },
   ]
 
@@ -62,8 +62,8 @@ const Header = ({ className = '' }: HeaderProps) => {
         ${className}
       `}
     >
-      <div className="max-w-7xl mx-auto px-6 lg:px-8 lg:py-4">
-        <div className="flex items-center justify-between py-4">
+      <div className="max-w-7xl mx-auto px-6 lg:px-8">
+        <div className="flex items-center justify-between py-3">
           {/* Logo / Brand - Más prominente */}
           <div className="flex items-center">
             <a
@@ -71,13 +71,13 @@ const Header = ({ className = '' }: HeaderProps) => {
               className="flex items-center space-x-3 hover:opacity-80 transition-opacity duration-200"
             >
               <div className="hidden lg:flex rounded-lg items-center justify-center">
-                <img src={logo} className='w-24 h-24' alt="Logo" />
+                <img src={logo} className='w-14 h-14' alt="Logo" />
               </div>
               <div className="flex flex-col">
-                <span className="lg:text-3xl font-bold text-woodsmoke-900 leading-tight">
+                <span className="lg:text-xl font-bold text-woodsmoke-900 leading-tight">
                   MIGUEL ALEJANDRE
                 </span>
-                <span className="text-lg text-woodsmoke-600 leading-tight">
+                <span className="text-sm text-woodsmoke-600 leading-tight">
                   Software Engineer
                 </span>
               </div>

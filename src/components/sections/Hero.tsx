@@ -1,7 +1,7 @@
 import { useEffect, useRef } from 'react'
 import gsap from 'gsap'
 import logo from '@/assets/logos/logo2.svg'
-import { MapPinIcon } from '@heroicons/react/16/solid'
+import { MapPin } from 'lucide-react'
 
 export const Hero = () => {
     const heroRef = useRef<HTMLElement>(null)
@@ -50,10 +50,10 @@ export const Hero = () => {
                     {/* Título principal */}
                     <div className="text-center">
                         <h1 ref={titleRef} className="text-5xl md:text-7xl font-bold bg-gradient-to-r from-woodsmoke-900 via-woodsmoke-800 to-woodsmoke-700 bg-clip-text text-transparent animate-fade-in tracking-wide mb-6">
-                            Full Stack Engineering & AI Solutions
+                            Ingeniería Full Stack & Soluciones de IA
                         </h1>
                         <p ref={subtitleRef} className="text-lg md:text-xl text-woodsmoke-700 animate-fade-in-delay max-w-3xl mx-auto">
-                            Hi, I'm Miguel Alejandre. I'm a Full Stack Engineer specializing in systems architectures and modern web development.
+                            Hola, soy Miguel Alejandre. Soy un ingeniero Full Stack especializado en arquitecturas de sistemas y desarrollo web moderno.
                         </p>
                     </div>
 
@@ -61,7 +61,7 @@ export const Hero = () => {
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-2xl mx-auto mt-12">
                         <div>
                             <h3 className="text-sm font-semibold text-woodsmoke-600 uppercase tracking-wide mb-2 flex items-center">
-                                Location <MapPinIcon className="size-5" /> 
+                                Ubicación <MapPin className="w-4 h-4 ml-1" /> 
                             </h3>
                             <p className="text-lg text-woodsmoke-900">
                                 México
@@ -70,10 +70,10 @@ export const Hero = () => {
                         
                         <div>
                             <h3 className="text-sm font-semibold text-woodsmoke-600 uppercase tracking-wide mb-2">
-                                Current Position
+                                Puesto Actual
                             </h3>
                             <p className="text-lg text-woodsmoke-900">
-                                Fullstack Engineer & AI Developer in Jatenx
+                                Mid Senior Full Stack Engineer in JateNX
                             </p>
                         </div>
                     </div>
@@ -84,7 +84,7 @@ export const Hero = () => {
                             href="#professional" 
                             className="inline-block bg-woodsmoke-900 text-white px-8 py-3 rounded-full font-medium hover:bg-woodsmoke-800 transition-colors duration-200"
                         >
-                            About me
+                            Sobre mí
                         </a>
                     </div>
                 </div>
