@@ -1,0 +1,70 @@
+name: Deploy Codeale
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '24'
+          cache: 'npm'
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Build
+        run: npm run build
+        env:
+          VITE_API_URL: ${{ secrets.VITE_API_URL }}
+
+      - name: Package artifact
+        run: tar -czf dist.tar.gz -C dist .
+
+      - name: Upload to VPS
+        uses: appleboy/scp-action@v0.1.7
+        with:
+          host: ${{ secrets.VPS_HOST }}
+          username: ${{ secrets.VPS_USER }}
+          key: ${{ secrets.VPS_SSH_KEY }}
+          source: dist.tar.gz
+          target: /home/admin/incoming/
+
+      - name: Deploy (atomic swap)
+        uses: appleboy/ssh-action@v1.0.3
+        with:
+          host: ${{ secrets.VPS_HOST }}
+          username: ${{ secrets.VPS_USER }}
+          key: ${{ secrets.VPS_SSH_KEY }}
+          script: |
+            set -e
+
+            DEPLOY_DIR="/home/admin/codeale"
+            INCOMING="/home/admin/incoming"
+
+            # Extraer el nuevo build
+            mkdir -p "$INCOMING/new"
+            tar -xzf "$INCOMING/dist.tar.gz" -C "$INCOMING/new"
+
+            # Swap atómico: current → previous, new → current
+            if [ -d "$DEPLOY_DIR/current" ]; then
+              rm -rf "$DEPLOY_DIR/previous"
+              mv "$DEPLOY_DIR/current" "$DEPLOY_DIR/previous"
+            fi
+
+            mkdir -p "$DEPLOY_DIR"
+            mv "$INCOMING/new" "$DEPLOY_DIR/current"
+
+            # Limpiar
+            rm -f "$INCOMING/dist.tar.gz"
+
+            echo "✅ Deploy completado"
