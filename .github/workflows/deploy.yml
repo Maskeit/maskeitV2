@@ -35,32 +35,28 @@ jobs:
       - name: Package artifact
         run: tar -czf dist.tar.gz -C dist .
 
+      - name: Setup SSH
+        run: |
+          mkdir -p ~/.ssh
+          echo "${{ secrets.VPS_SSH_KEY }}" > ~/.ssh/deploy_key
+          chmod 600 ~/.ssh/deploy_key
+          ssh-keyscan -H ${{ secrets.VPS_HOST }} >> ~/.ssh/known_hosts
+
       - name: Upload to VPS
-        uses: appleboy/scp-action@v0.1.7
-        with:
-          host: ${{ secrets.VPS_HOST }}
-          username: ${{ secrets.VPS_USER }}
-          key: ${{ secrets.VPS_SSH_KEY }}
-          source: dist.tar.gz
-          target: /home/admin/incoming/
+        run: |
+          scp -i ~/.ssh/deploy_key dist.tar.gz ${{ secrets.VPS_USER }}@${{ secrets.VPS_HOST }}:/home/admin/incoming/
 
       - name: Deploy (atomic swap)
-        uses: appleboy/ssh-action@v1.0.3
-        with:
-          host: ${{ secrets.VPS_HOST }}
-          username: ${{ secrets.VPS_USER }}
-          key: ${{ secrets.VPS_SSH_KEY }}
-          script: |
+        run: |
+          ssh -i ~/.ssh/deploy_key ${{ secrets.VPS_USER }}@${{ secrets.VPS_HOST }} bash << 'EOF'
             set -e
 
             DEPLOY_DIR="/home/admin/codeale"
             INCOMING="/home/admin/incoming"
 
-            # Extraer el nuevo build
             mkdir -p "$INCOMING/new"
             tar -xzf "$INCOMING/dist.tar.gz" -C "$INCOMING/new"
 
-            # Swap atómico: current → previous, new → current
             if [ -d "$DEPLOY_DIR/current" ]; then
               rm -rf "$DEPLOY_DIR/previous"
               mv "$DEPLOY_DIR/current" "$DEPLOY_DIR/previous"
@@ -69,7 +65,6 @@ jobs:
             mkdir -p "$DEPLOY_DIR"
             mv "$INCOMING/new" "$DEPLOY_DIR/current"
 
-            # Limpiar
             rm -f "$INCOMING/dist.tar.gz"
-
             echo "✅ Deploy completado"
+          EOF
