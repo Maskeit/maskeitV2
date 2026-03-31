@@ -5,7 +5,7 @@ import LinkedinSvg from '../../../public/skills/Linkedin.svg';
 export const Contact = () => {
     const socialLogos = [
         { label: 'GitHub', url: 'https://github.com/Maskeit', icon: GithubSvg },
-        { label: 'LinkedIn', url: 'www.linkedin.com/in/miguel1170', icon: LinkedinSvg },
+        { label: 'LinkedIn', url: 'https://linkedin.com/in/miguel1170', icon: LinkedinSvg },
         { label: 'Email', url: 'mailto:miguelalejandre182@gmail.com', icon: GmailSvg },
     ];
 

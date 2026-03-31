@@ -64,7 +64,7 @@ export const About = () => {
                         <div className="text-sm text-woodsmoke-600">Años de experiencia</div>
                     </div>
                     <div className="bg-white/60 border border-woodsmoke-200/50 rounded-xl p-5 text-center">
-                        <div className="text-3xl font-bold text-woodsmoke-900">5+</div>
+                        <div className="text-3xl font-bold text-woodsmoke-900">10+</div>
                         <div className="text-sm text-woodsmoke-600">Proyectos entregados</div>
                     </div>
                     <div className="bg-white/60 border border-woodsmoke-200/50 rounded-xl p-5 text-center">
