@@ -81,10 +81,10 @@ export const Hero = () => {
                     {/* Botón CTA */}
                     <div className="text-center mt-8">
                         <a 
-                            href="#professional" 
+                            href="#contact" 
                             className="inline-block bg-woodsmoke-900 text-white px-8 py-3 rounded-full font-medium hover:bg-woodsmoke-800 transition-colors duration-200"
                         >
-                            Sobre mí
+                            Contáctame
                         </a>
                     </div>
                 </div>
