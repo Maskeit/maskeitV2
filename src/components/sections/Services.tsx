@@ -76,12 +76,10 @@ export const About = () => {
                 {/* CTA */}
                 <div className="text-center">
                     <a
-                        href="https://demo.miguelalejandre.com"
-                        target="_blank"
-                        rel="noopener noreferrer"
+                        href="#/demo"
                         className="inline-block bg-woodsmoke-900 text-white font-semibold px-8 py-4 rounded-full hover:bg-woodsmoke-800 transition-colors duration-200 text-lg"
                     >
-                        Ver demostración
+                        Ver ejemplos de proyectos
                     </a>
                     <p className="text-woodsmoke-500 text-sm mt-3">
                         Conoce ejemplos de lo que puedo construir para ti

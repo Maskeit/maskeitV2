@@ -38,6 +38,7 @@ const Header = ({ className = '' }: HeaderProps) => {
   const navItems = [
     { label: 'Inicio', href: '#hero' },
     { label: 'Servicios', href: '#services' },
+    { label: 'Proyectos', href: '#/demo' },
     { label: 'Experiencia', href: '#skills' },
     { label: 'Sobre mí', href: '#about' },
     { label: 'Contacto', href: '#contact' },
