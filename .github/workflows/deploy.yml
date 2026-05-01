@@ -44,6 +44,7 @@ jobs:
 
       - name: Upload to VPS
         run: |
+          ssh -i ~/.ssh/deploy_key ${{ secrets.VPS_USER }}@${{ secrets.VPS_HOST }} mkdir -p /home/admin/incoming
           scp -i ~/.ssh/deploy_key dist.tar.gz ${{ secrets.VPS_USER }}@${{ secrets.VPS_HOST }}:/home/admin/incoming/
 
       - name: Deploy (atomic swap)
