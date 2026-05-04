@@ -60,7 +60,7 @@ export const About = () => {
                 {/* Stats */}
                 <div className="grid grid-cols-3 gap-4 mb-12">
                     <div className="bg-white/60 border border-woodsmoke-200/50 rounded-xl p-5 text-center">
-                        <div className="text-3xl font-bold text-woodsmoke-900">3+</div>
+                        <div className="text-3xl font-bold text-woodsmoke-900">5+</div>
                         <div className="text-sm text-woodsmoke-600">Años de experiencia</div>
                     </div>
                     <div className="bg-white/60 border border-woodsmoke-200/50 rounded-xl p-5 text-center">
