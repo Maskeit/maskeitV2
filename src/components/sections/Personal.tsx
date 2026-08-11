@@ -7,10 +7,10 @@ export const Personal = () => {
                 {/* Título principal */}
                 <div className="text-center mb-12">
                     <h2 className="text-5xl md:text-7xl font-bold bg-gradient-to-r from-woodsmoke-900 via-woodsmoke-800 to-woodsmoke-700 bg-clip-text text-transparent animate-fade-in tracking-wide">
-                        Vida Personal
+                        Mi viaje como Profesional
                     </h2>
                     <p className="text-woodsmoke-600 text-xl mt-4">
-                        más allá del código, un vistazo a mi vida personal y pasiones
+                        el networking y un vistazo a mis carrera
                     </p>
                 </div>
 
@@ -19,7 +19,7 @@ export const Personal = () => {
 
                     {/* Foto principal - tall left */}
                     <div className="col-span-2 row-span-2 rounded-2xl overflow-hidden relative border border-woodsmoke-200/50">
-                        <img src="/photos/me-2.jpeg" alt="Miguel" className="w-full h-full object-cover" />
+                        <img src="/photos/miguel_2.webp" alt="Miguel" className="w-full h-full object-cover" />
                         <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-woodsmoke-900/80 to-transparent p-5">
                             <h3 className="text-white font-bold text-xl">Miguel</h3>
                             <p className="text-white/90 text-sm">Software Engineer & Creator</p>
@@ -28,7 +28,7 @@ export const Personal = () => {
 
                     {/* Tecnología */}
                     <div className="col-span-1 row-span-2 rounded-2xl overflow-hidden relative border border-woodsmoke-200/50">
-                        <img src="/photos/tech.jpeg" alt="Tecnología" className="w-full h-full object-cover" />
+                        <img src="/photos/tech.webp" alt="Tecnología" className="w-full h-full object-cover" />
                         <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-woodsmoke-900/80 to-transparent p-3">
                             <h3 className="text-white font-bold text-lg">Entusiasta de la Tecnología</h3>
                             <p className="text-white/90 text-xs hidden md:block">Experimentando con herramientas de vanguardia y código abierto.</p>
@@ -37,7 +37,7 @@ export const Personal = () => {
 
                     {/* Música */}
                     <div className="col-span-1 row-span-2 rounded-2xl overflow-hidden relative border border-woodsmoke-200/50">
-                        <img src="/photos/me-3.jpeg" alt="Música" className="w-full h-full object-cover" />
+                        <img src="/photos/miguel_8.webp" alt="Música" className="w-full h-full object-cover" />
                         <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-woodsmoke-900/80 to-transparent p-3">
                             <h3 className="text-white font-bold text-lg">La música como expresión</h3>
                             <p className="text-white/90 text-xs hidden md:block">Escuchar y tocar me inspira a crear nuevas ideas.</p>
@@ -56,23 +56,33 @@ export const Personal = () => {
 
                     {/* Compartiendo Conocimiento */}
                     <div className="col-span-1 row-span-1 rounded-2xl overflow-hidden relative border border-woodsmoke-200/50">
-                        <img src="/photos/talk.jpeg" alt="Compartiendo conocimiento" className="w-full h-full object-cover" />
+                        <img src="/photos/miguel_9.webp" alt="Compartiendo conocimiento" className="w-full h-full object-cover" />
                         <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-woodsmoke-900/80 to-transparent p-3">
                             <h3 className="text-white font-bold text-base">Compartiendo Conocimiento</h3>
+                            <p className="text-white/90 text-xs">Una de mis pasiones es compartir lo que sé con los demás y a su vez aprender de  ellos.</p>
                         </div>
                     </div>
 
                     {/* Tiempo Libre */}
                     <div className="col-span-1 row-span-1 rounded-2xl overflow-hidden relative border border-woodsmoke-200/50">
-                        <img src="/photos/me-chill.jpeg" alt="Tiempo libre" className="w-full h-full object-cover" />
+                        <img src="/photos/miguel_11.webp" alt="Tiempo libre" className="w-full h-full object-cover" />
                         <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-woodsmoke-900/80 to-transparent p-3">
                             <h3 className="text-white font-bold text-base">Tiempo Libre</h3>
+                            <p className="text-white/90 text-xs">Un respiro a las pantallas es siempre necesario,</p>
                         </div>
                     </div>
 
                     {/* Exposiciones - wide */}
-                    <div className="col-span-2 row-span-1 rounded-2xl overflow-hidden relative border border-woodsmoke-200/50">
-                        <img src="/photos/me-expo.jpeg" alt="Exposiciones" className="w-full h-full object-cover" />
+                    <div className="col-span-2 row-span-2 rounded-2xl overflow-hidden relative border border-woodsmoke-200/50">
+                        <img src="/photos/miguel_4.webp" alt="Networking" className="w-full h-full object-cover" />
+                        <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-woodsmoke-900/80 to-transparent p-3">
+                            <h3 className="text-white font-bold text-lg">Networking</h3>
+                            <p className="text-white/90 text-xs">La comunidad tech es de lo más importante ya que las mejores ideas surgen cuando conocemos otros equipos y sus perspectivas. Cada eventos es una oportunidad para aprender de los demás</p>
+                        </div>
+                    </div>
+                    {/* Exposiciones - wide */}
+                    <div className="col-span-2 row-span-2 rounded-2xl overflow-hidden relative border border-woodsmoke-200/50">
+                        <img src="/photos/miguel_3.webp" alt="Exposiciones" className="w-full h-full object-cover" />
                         <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-woodsmoke-900/80 to-transparent p-3">
                             <h3 className="text-white font-bold text-lg">Exposiciones y Eventos</h3>
                             <p className="text-white/90 text-xs">Participando en eventos de tecnología y compartiendo ideas con la comunidad.</p>

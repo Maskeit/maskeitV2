@@ -76,7 +76,7 @@ export const About = () => {
                 {/* CTA */}
                 <div className="text-center">
                     <a
-                        href="#/demo"
+                        href="/demo"
                         className="inline-block bg-woodsmoke-900 text-white font-semibold px-8 py-4 rounded-full hover:bg-woodsmoke-800 transition-colors duration-200 text-lg"
                     >
                         Ver ejemplos de proyectos

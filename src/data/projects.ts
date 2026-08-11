@@ -6,7 +6,7 @@ export const projects: Project[] = [
         title: 'E-commerce con Stripe',
         description:
             'Tienda online completa con Google SSO, catálogo, carrito, integración de pagos Stripe y panel de inventario.',
-        image: '/photos/catalogo_cis.png',
+        image: '/photos/catalogo_cis.webp',
         link: 'https://cisnaturatienda.com/',
         category: 'E-commerce',
         tags: ['Next.js', 'Stripe', 'Tailwind','FastAPI', 'PostgreSQL'],
@@ -15,7 +15,7 @@ export const projects: Project[] = [
         id: 'gestion',
         title: 'Red de gestión y certificación de playas de Iberoamérica',
         description:'Red de gestión integrada por profesionales, empresarios y científicos de más de 17 países que comparten actividades y eventos de los nodos.',
-        image: '/photos/proplayas.png',
+        image: '/photos/proplayas.webp',
         link: 'https://proplayas.org/',
         category: 'Portales',
         tags: ['Next.js', 'Tailwind','FastAPI', 'PostgreSQL'],
@@ -25,8 +25,8 @@ export const projects: Project[] = [
         title: 'Plataforma de conversación con LLM base RAG',
         description:
             'Sistema de conversación con modelos de lenguaje grande (LLM) soporte automatizado alimentado con informacion empresarial.',
-        image: '/photos/llm.png',
-        link: '#/demo',
+        image: '/photos/llm.webp',
+        link: '/demo',
         category: 'Chats & LLM',
         tags: ['Next.js', 'FastAPI', 'RedisVL', 'Microsoft Azure', 'OpenAI'],
     },
@@ -35,7 +35,7 @@ export const projects: Project[] = [
         title: 'Sitio web de compañía de tecnología',
         description:
             'Landing page para una compañía de tecnología, mostrando servicios, equipo y contacto. Integrado con Sanity CMS para fácil actualización de contenido.',
-        image: '/photos/quantum.png',
+        image: '/photos/quantum.webp',
         link: 'https://01com.com/',
         category: 'Portales',
         tags: ['Next.js', 'Sanity CMS'],

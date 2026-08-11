@@ -1,5 +1,4 @@
-import { useEffect, useRef } from 'react'
-import gsap from 'gsap'
+import { useRef } from 'react'
 import logo from '@/assets/logos/logo2.svg'
 import { MapPin } from 'lucide-react'
 
@@ -8,37 +7,6 @@ export const Hero = () => {
     const titleRef = useRef<HTMLHeadingElement>(null)
     const subtitleRef = useRef<HTMLParagraphElement>(null)
     
-    useEffect(() => {
-        // GSAP Timeline para secuencia de animaciones
-        const tl = gsap.timeline()
-        
-        if (titleRef.current && subtitleRef.current) {
-            // Set initial state
-            gsap.set([titleRef.current, subtitleRef.current], {
-                opacity: 0,
-                y: 50
-            })
-            
-            // Animate title first
-            tl.to(titleRef.current, {
-                opacity: 1,
-                y: 0,
-                duration: 1.2,
-                ease: "power2.out"
-            })
-            // Then animate subtitle
-            .to(subtitleRef.current, {
-                opacity: 1,
-                y: 0,
-                duration: 1,
-                ease: "power2.out"
-            }, "-=0.8") // Overlap with previous animation
-        }
-        
-        return () => {
-            tl.kill() // Cleanup
-        }
-    }, [])
     
     return (
         <>
@@ -60,18 +28,18 @@ export const Hero = () => {
                     {/* Información de ubicación y puesto */}
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-2xl mx-auto mt-12">
                         <div>
-                            <h3 className="text-sm font-semibold text-woodsmoke-600 uppercase tracking-wide mb-2 flex items-center">
+                            <p className="text-sm font-semibold text-woodsmoke-600 uppercase tracking-wide mb-2 flex items-center">
                                 Ubicación <MapPin className="w-4 h-4 ml-1" /> 
-                            </h3>
+                            </p>
                             <p className="text-lg text-woodsmoke-900">
                                 México
                             </p>
                         </div>
                         
                         <div>
-                            <h3 className="text-sm font-semibold text-woodsmoke-600 uppercase tracking-wide mb-2">
+                            <p className="text-sm font-semibold text-woodsmoke-600 uppercase tracking-wide mb-2">
                                 Puesto Actual
-                            </h3>
+                            </p>
                             <p className="text-lg text-woodsmoke-900">
                                 Mid Senior Full Stack Engineer in JateNX
                             </p>

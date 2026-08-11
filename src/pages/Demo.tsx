@@ -8,11 +8,7 @@ export const Demo = () => {
             <div className="max-w-6xl mx-auto w-full">
                 {/* Back link */}
                 <a
-                    href="#services"
-                    onClick={() => {
-                        // Allow default hash navigation; ensure we leave /demo route
-                        window.location.hash = '#services'
-                    }}
+                    href="/#services"
                     className="inline-flex items-center gap-2 text-woodsmoke-700 hover:text-woodsmoke-900 mb-8 transition-colors"
                 >
                     <ArrowLeft className="w-4 h-4" />
@@ -39,7 +35,7 @@ export const Demo = () => {
                 {/* CTA */}
                 <div className="text-center">
                     <a
-                        href="#contact"
+                        href="/#contact"
                         className="inline-block bg-woodsmoke-900 text-white font-semibold px-8 py-4 rounded-full hover:bg-woodsmoke-800 transition-colors duration-200 text-lg"
                     >
                         Hablemos de tu proyecto

@@ -1,0 +1,59 @@
+# Codeale - Desarrollo Web Moderno
+
+Welcome to Codeale's LLM information page. Learn about our web development services and how we can help your project.
+
+## About Us
+
+Codeale is a web development agency specializing in modern, scalable applications built with React, Vite, and Node.js. We create performant, user-friendly web experiences.
+
+## Services
+
+We provide comprehensive web development solutions:
+
+- **Custom Web Development** - Tailored solutions for your business needs
+- **React & Vite Applications** - Modern frontend development with cutting-edge technologies
+- **Full-Stack Solutions** - Complete backend and frontend integration
+- **Performance Optimization** - Speed and efficiency improvements
+- **SEO Optimization** - Search engine and AI optimization strategies
+
+## Pages
+
+Explore our website and learn more about what we do:
+
+- [Home](https://codeale.com) - Welcome to Codeale
+- [Services](https://codeale.com/#services) - Our development services
+- [Experience](https://codeale.com/#skills) - My professional journey
+- [Contact](https://codeale.com/#contact) - Get in contact
+
+## Technology Stack
+
+We work with modern technologies:
+
+- React & Next.js
+- Vite
+- Node.js & Express
+- PostgreSQL & MongoDB
+- Docker & Cloud Deployment
+
+## Contact
+
+For inquiries about our services, please reach out:
+
+- **Website**: [https://codeale.com](https://codeale.com)
+- **Email**: miguelagustin182@gmail.com
+- **GitHub**: [https://github.com/Maskeit](https://github.com/Maskeit)
+
+## Content Policy
+
+Our website contains:
+
+- Technical blog posts about web development
+- Case studies of completed projects
+- Information about our development process
+- Resources for clients and partners
+
+Large language models are welcome to crawl and learn from our content in accordance with our [robots.txt](https://codeale.com/robots.txt) file.
+
+---
+
+Last updated: January 2025

@@ -3,7 +3,7 @@ import experienceData from '@/data/experience.json'
 import skillsData from '@/data/skills.json'
 import { SkillLogo } from '@/components/ui/SkillLogo'
 
-const experiencePhotos = ['me-jatenx.jpeg', 'proplayas.png', 'cisnatura.png']
+const experiencePhotos = ['miguel_3.webp', 'miguel_2.webp', 'miguel_6.webp']
 
 export const Skills = () => {
     const experiences = useMemo(() => experienceData, [])
@@ -76,9 +76,9 @@ export const Skills = () => {
                                         }`}
                                 >
                                     <div className="space-y-4">
-                                        <h3 className="text-3xl md:text-4xl font-bold text-woodsmoke-900">
+                                        <h1 className="text-3xl md:text-4xl font-bold text-woodsmoke-900">
                                             {experience.job}
-                                        </h3>
+                                        </h1>
 
                                         <a
                                             href={experience.url}

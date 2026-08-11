@@ -36,9 +36,9 @@ const Header = ({ className = '' }: HeaderProps) => {
   }, [lastScrollY])
 
   const navItems = [
-    { label: 'Inicio', href: '#hero' },
+    { label: 'Inicio', href: '/' },
     { label: 'Servicios', href: '#services' },
-    { label: 'Proyectos', href: '#/demo' },
+    { label: 'Proyectos', href: '/demo' },
     { label: 'Experiencia', href: '#skills' },
     { label: 'Sobre mí', href: '#about' },
     { label: 'Contacto', href: '#contact' },
@@ -68,7 +68,7 @@ const Header = ({ className = '' }: HeaderProps) => {
           {/* Logo / Brand - Más prominente */}
           <div className="flex items-center">
             <a
-              href="#hero"
+              href="/"
               className="flex items-center space-x-3 hover:opacity-80 transition-opacity duration-200"
             >
               <div className="hidden lg:flex rounded-lg items-center justify-center">
