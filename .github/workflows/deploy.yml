@@ -46,8 +46,8 @@ jobs:
           context: .
           push: true
           tags: |
-            ghcr.io/${{ github.repository_owner }}/codeale:latest
-            ghcr.io/${{ github.repository_owner }}/codeale:${{ github.sha }}
+            ghcr.io/maskeit/codeale:latest
+            ghcr.io/maskeit/codeale:${{ github.sha }}
 
       - name: Trigger Coolify deploy
         run: |
