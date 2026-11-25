@@ -10,7 +10,7 @@ export const Personal = () => {
                         Mi viaje como Profesional
                     </h2>
                     <p className="text-woodsmoke-600 text-xl mt-4">
-                        el networking y un vistazo a mis carrera
+                        el networking y un vistazo a mi carrera
                     </p>
                 </div>
 

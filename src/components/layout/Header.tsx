@@ -1,5 +1,6 @@
 import { useEffect, useRef, useState } from 'react'
-import logo from '@/assets/logos/2.png'
+import logo from '@/assets/logos/logo-n.svg'
+import { SparklesIcon } from "lucide-react";
 
 interface HeaderProps {
   className?: string
@@ -100,6 +101,20 @@ const Header = ({ className = '' }: HeaderProps) => {
                 {item.label}
               </a>
             ))}
+            <a
+              href="https://ai.codeale.com/advice"
+              target="_blank"
+              title="Prueba de testing con IA"
+              className="
+                inline-flex items-center gap-2 px-4 py-2 text-base font-semibold
+                text-white bg-gradient-to-r from-violet-600 to-indigo-600
+                hover:from-violet-500 hover:to-indigo-500 hover:shadow-md
+                rounded-lg transition-all duration-200 relative group
+              "
+            >
+              <SparklesIcon className="h-4 w-4 transition-transform duration-200 group-hover:rotate-12" />
+              AI Testing
+            </a>
 
           </nav>
 
